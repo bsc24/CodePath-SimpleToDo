@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/Add_Button"
+        android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="false"
@@ -21,7 +22,7 @@
         android:text="Add" />
 
     <EditText
-        android:id="@+id/Edit_Text_Item"
+        android:id="@+id/addTextItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -32,15 +33,15 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_toStartOf="@+id/Add_Button"
-        android:layout_toLeftOf="@+id/Add_Button"
+        android:layout_toStartOf="@+id/addButton"
+        android:layout_toLeftOf="@+id/addButton"
         android:ems="10"
         android:hint="Add an item here!" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/Recycler_View_Items"
+        android:id="@+id/recyclerViewItems"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/Edit_Text_Item"
+        android:layout_above="@+id/addTextItem"
         android:layout_marginBottom="0dp" />
 </RelativeLayout>
